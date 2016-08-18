@@ -1,0 +1,19 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_pgsql
+    database_host: localhost
+    database_port: null
+    database_name: indicadores
+    database_user: admin
+    database_password: Msh123.2014
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    locale: es_HN
+    secret: 295125e6c66ab2a1038b62ad3c910733510
+    database_path: null
+    archivo_vitacora: '%kernel.logs_dir%/minsal.log'
+    carpeta_siig_mondrian: '%kernel.root_dir%/mondrian/'
+    conexion_bd_pentaho: Minsal
+    listado_metadata: datasources.siig

@@ -1,0 +1,231 @@
+_inicio:
+    pattern:  /
+    defaults: { _controller: IndicadoresBundle:Tablero:tablero }
+_reporter:
+    path: /reporter
+    defaults: { _controller: "IndicadoresBundle:Tablero:reporter" }
+
+_reporterexcel:
+    pattern: /reporterexcel/{gestor},{establecimiento},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:reporterexcel }
+    requirements: { _method: post|get}    
+ 
+
+_printh:
+    pattern:  /printh/{gestor},{establecimiento},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:printh } 
+_reporterexcelh:
+    pattern: /reporterexcelh/{gestor},{establecimiento},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:reporterexcelh }
+    requirements: { _method: post|get}   
+
+_print:
+    pattern:  /print/{gestor},{establecimiento},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:print }   
+_reporte:
+    pattern:  /reporte/
+    defaults: { _controller: IndicadoresBundle:Tablero:reporte }
+
+_matriz:
+    pattern:  /matriz/
+    defaults: { _controller: IndicadoresBundle:Tablero:matriz }
+
+_fornpficha:
+    pattern:  /fornpficha/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpficha }
+    requirements: { _method: post|get}
+
+_matrizdos:
+    pattern:  /matrizdos/
+    defaults: { _controller: IndicadoresBundle:Tablero:matrizdos }   
+
+
+
+_reporteh:
+    pattern:  /reporteh/
+    defaults: { _controller: IndicadoresBundle:Tablero:reporteh }
+
+
+_crearReporte:
+    pattern: /crearReporte/{gestor},{estab},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:crearReporte }
+
+_crearReporteG:
+    pattern: /crearReporteG/{gestor},{establecimiento},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:crearReporteG }
+
+
+_crearReporteh:
+    pattern: /crearReporteh/{gestor},{estab},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:crearReporteh }
+
+_crearReporteGH:
+    pattern: /crearReporteGH/{gestor},{establecimiento},{periodo}/
+    defaults: { _controller: IndicadoresBundle:Tablero:crearReporteGH }
+
+
+
+
+
+_forn:
+    pattern:  /forn/
+    defaults: { _controller: IndicadoresBundle:Tablero:forn }
+_ue:
+    pattern:  /ue/
+    defaults: { _controller: IndicadoresBundle:Tablero:ue}
+_fornh:
+    pattern:  /fornh/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornh }
+_fornp:
+    pattern:  /fornp/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornp }
+    requirements: { _method: post|get} 
+_fornpm:
+    pattern:  /fornpm/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpm }
+    requirements: { _method: post|get} 
+
+
+
+
+
+_fornpd:
+    pattern:  /fornpd/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpd }
+    requirements: { _method: post|get}
+_fornpdg:
+    pattern:  /fornpdg/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpdg }
+    requirements: { _method: post|get}
+_fornpdgt:
+    pattern:  /fornpdgt/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpdgt }
+    requirements: { _method: post|get}
+_fornpdh:
+    pattern:  /fornpdh/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpdh }
+    requirements: { _method: post|get}
+_fornpdhh:
+    pattern:  /fornpdhh/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpdhh }
+    requirements: { _method: post|get}
+_fornpdhht:
+    pattern:  /fornpdhht/{param}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpdhht }
+    requirements: { _method: post|get}
+_fornd:
+    pattern:  /fornd/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornd }
+
+_forndh:
+    pattern:  /forndh/
+    defaults: { _controller: IndicadoresBundle:Tablero:forndh }
+
+_fornph:
+    pattern:  /fornph/{paramh}/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornph }
+    requirements: { _method: post|get}  
+_forns:
+    pattern: /forns/
+    defaults: { _controller: IndicadoresBundle:Tablero:forns, _format: json}
+    requirements: {  _format: (xml|json), _method: post|get} 
+_fornpfichas:
+    pattern: /fornpfichas/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornpfichas, _format: json}
+    requirements: {  _format: (xml|json), _method: post|get}
+
+_guardarEU:
+    pattern: /guardarEU/
+    defaults: { _controller: IndicadoresBundle:Tablero:guardarEU, _format: json}
+    requirements: {  _format: (xml|json), _method: post|get} 
+_bEstablecimientoU:
+    pattern: /bEstablecimientoU/{us}/
+    defaults: { _controller: IndicadoresBundle:Tablero:bEstablecimientoU }
+    requirements: { _method: post|get}    
+_bgEstablecimientoU:
+    pattern: /bgEstablecimientoU/{us}/
+    defaults: { _controller: IndicadoresBundle:Tablero:bgEstablecimientoU }
+    requirements: { _method: post|get}  
+_buscarMunicipio:
+    pattern: /buscarMunicipio/{depto}/
+    defaults: { _controller: IndicadoresBundle:Tablero:buscarMunicipio }
+    requirements: { _method: post|get}
+    
+_buscarEstablecimiento:
+    pattern: /buscarEstablecimiento/{muni}/
+    defaults: { _controller: IndicadoresBundle:Tablero:buscarEstablecimiento }
+    requirements: { _method: post|get}
+    
+_buscarEstablecimientoU:
+    pattern: /buscarEstablecimientoU/{usuario}/
+    defaults: { _controller: IndicadoresBundle:Tablero:buscarEstablecimientoU }
+    requirements: { _method: post|get}
+    
+_fornsh:
+    pattern: /fornsh/
+    defaults: { _controller: IndicadoresBundle:Tablero:fornsh, _format: json}
+    requirements: {  _format: (xml|json), _method: post|get}  
+_inicioPublico:
+    pattern:  /
+    defaults: { _controller: IndicadoresBundle:Tablero:tableroPublico }
+
+group_show:
+    pattern:  /migroup/{token}/{valor}
+    defaults: { _controller: IndicadoresBundle:Indicador:group_reload }
+    requirements:
+        _method:  GET
+        
+indicadores:
+    resource: "@IndicadoresBundle/Controller/"
+    type:     annotation
+    prefix:   /
+    
+catalogos:
+    resource: "@IndicadoresBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+    
+sonata_page_cache:
+    resource: '@SonataCacheBundle/Resources/config/routing/cache.xml'
+    prefix: /
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+sonata_user_profile:
+    resource: "@SonataUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@IndicadoresBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile    
+fos_user_group:
+    resource: "@FOSUserBundle/Resources/config/routing/group.xml"
+    prefix: /group
+    
+sonata_user:
+    resource: '@IndicadoresBundle/Resources/config/routing/admin_security.xml'
+    prefix: /admin
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"    

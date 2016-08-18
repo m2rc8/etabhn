@@ -1,0 +1,30 @@
+usuarioestablecimiento:
+    pattern:  /
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:index" }
+
+usuarioestablecimiento_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:show" }
+
+usuarioestablecimiento_new:
+    pattern:  /new
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:new" }
+
+usuarioestablecimiento_create:
+    pattern:  /create
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:create" }
+    requirements: { _method: post }
+
+usuarioestablecimiento_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:edit" }
+
+usuarioestablecimiento_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:update" }
+    requirements: { _method: post|put }
+
+usuarioestablecimiento_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "IndicadoresBundle:UsuarioEstablecimiento:delete" }
+    requirements: { _method: post|delete }

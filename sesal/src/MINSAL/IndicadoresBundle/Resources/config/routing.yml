@@ -1,0 +1,4 @@
+catalogos_usuarioestablecimiento:
+    resource: "@IndicadoresBundle/Resources/config/routing/usuarioestablecimiento.yml"
+    prefix:   /usuarioestablecimiento
+
